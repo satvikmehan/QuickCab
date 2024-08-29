@@ -24,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    _moveToLogin();
+    //_moveToLogin();
   }
   @override
   Widget build(BuildContext context) {
@@ -45,7 +45,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       Container(
                         width: deviceSize.width,
                         height: deviceSize.height/2,
-                        padding: const EdgeInsets.all(10),
+                        padding: EdgeInsets.only(top:deviceSize.width/100,bottom:deviceSize.width/100,left:deviceSize.width/30,right:deviceSize.width/30),
                         child:Image.asset("assets/images/title.png"),
                       ),
                       
@@ -53,7 +53,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       Container(
                          width: deviceSize.width,
                         height: deviceSize.height/8,
-                         padding: const EdgeInsets.all(10),
+                        padding: EdgeInsets.only(top:deviceSize.width/100,bottom:deviceSize.width/100,left:deviceSize.width/15,right:deviceSize.width/15),
                         child:Image.asset("assets/images/By.png")
                       ),
                       SizedBox(height: deviceSize.height/27),
